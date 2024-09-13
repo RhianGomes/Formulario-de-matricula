@@ -24,8 +24,9 @@
 
                 <form method="post" enctype="multipart/form-data">
                     <fieldset class="child-info">
-                        <legend>Informações da criança</legend>
 
+
+                        <legend>Informações da criança</legend>
                         <div class="input-wrapper">
                           <label for="Nome">Nome completo</label>  
                           <input  id="Nome" type="text"
@@ -68,6 +69,44 @@
                             </div>
                         </div>
 
+                    </fieldset>
+
+                    <fieldset class="address">
+                        <legend>
+                            Endereço residencial</legend>
+
+                            <div class="input-whapper">
+                                <label for="cep">CEP</label>
+                                <input type="text" id="cep" name="cep">
+                            </div>
+
+                            <div class="flex">
+                                <div class="input-whapper flex-2">
+                                    <label for="rua">Rua</label flex-2>
+                                    <input type="text" id="Rua" name="Rua"
+                                        value="Rua das Flores" disabled>
+                                </div>  
+                                
+
+                                <div class="input-whapper flex-1">
+                                    <label for="Número">Número</label>
+                                    <input type="number" id="Número" name="Número">
+                                </div>
+                            </div>
+                            <div class="flex">
+                                <div class="input-whapper flex-2">
+                                    <label for="Cidade">Cidade</label flex-2>
+                                    <input type="text" id="Cidade" name="Cidade"
+                                        value="Juiz de Fora" disabled>
+                                </div>  
+                                
+
+                                <div class="input-whapper flex-1">
+                                    <label for="Estado">Estado</label>
+                                    <input type="text" id="Estado" name="Estado" disabled
+                                    value="MG">
+                                </div>
+                            </div>
                     </fieldset>
                 </form>
             </div>   
