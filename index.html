@@ -21,8 +21,51 @@
                 
                 <h1>Formulário de matrícula</h1>
                 <p>Preencha os dados abaixo para matricular seu filho na escola de educação infantil Estrelas do Amanhã.</p>
-            </div>
-            
+
+                <form method="post" enctype="multipart/form-data">
+                    <fieldset class="child-info">
+                        <legend>Informações da criança</legend>
+
+                        <div class="input-wrapper">
+                          <label for="Nome">Nome completo</label>  
+                          <input  id="Nome" type="text"
+                          placeholder="Qual o nome da criança">
+                        </div>
+
+                        <div class="input-wrapper">
+                            <label for="aniversario">Data de nascimento</label>
+                            <input type="date" id="aniversario">
+                        </div>
+
+                        <div class="select-wrapper">
+                            <label for="gênero">Sexo</label>
+                            <select name="gênero" id="gênero">
+                                 <option value="Feminino">Feminino</option>
+                                 <option value="Masculino">Masculino</option>   
+                                 <option value="na">Prefiro não responder</option>
+                            </select>
+                        </div>
+
+                        <div class="textarea-wrapper">
+                            <label for="Informações médicas">Informações médicas</label>
+                            <textarea name="Informações médicas" id="Informações médicas"
+                            cols="30" rows="10"
+                            placeholder="A criança possui alguma condição médica que a escola deve estar ciente? (Se sim, especifique)"
+                            ></textarea>
+                        </div>
+
+                        <div class="droparea-wrapper">
+                            <input type="file" id="arquivo" name="arquivo">
+                            <img src="assets/icons/cloud-upload.png" alt="">
+                            <p>
+                                Clique aqui para <br>
+                                selecionar os arquivos
+                            </p>
+                        </div>
+
+                    </fieldset>
+                </form>
+            </div>   
         </main>
 
         <aside>
